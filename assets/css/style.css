@@ -25,28 +25,29 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(0, 0%, 50%), 
+    hsl(0, 0%, 80%)
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(0, 0%, 87%),
+    hsla(0, 0%, 88%),
+  ), hsl(0, 0%, 90%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(224, 61%, 75%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    hsl(0, 0%, 83%) 0%, 
+    hsla(0, 0%, 85%)
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(207, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    hsla(0, 0%, 85%),
+  ), hsl(0, 0%, 90%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    hsl(0, 0%, 100%),
+    hsla(0, 0%, 80%)
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
@@ -56,17 +57,17 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 33%);
+  --jet: hsl(0, 0%, 95%);
   --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(0, 0%, 32%);
-  --smoky-black: hsl(0, 0%, 20%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(202, 61%, 75%);
+  --eerie-black-1: hsl(240, 2%, 80%);
+  --eerie-black-2: hsl(0, 0%, 100%);
+  --smoky-black: hsl(0, 0%, 92%);
+  --white-1: hsl(0, 0%, 95%);
+  --white-2: hsl(0, 0%, 0%);
+  --orange-yellow-crayola: hsl(202, 61%, 70%);
   --vegas-gold: hsl(224, 61%, 75%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-gray: hsl(0, 0%, 30%);
+  --light-gray-70: hsla(0, 0%, 84%);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -287,7 +288,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: var(--white-1);
   border-radius: inherit;
   z-index: -1;
 }
@@ -344,8 +345,8 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
-  background: var(--onyx);
+  color: var(--black-1);
+  background: var(--smoky-black);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -415,7 +416,7 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
+  color: var(--light-gray);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -458,7 +459,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(0, 0%, 92%);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -963,7 +964,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--eerie-black-1);
+  background: var(--eerie-black-2);
   z-index: -1;
 }
 
@@ -994,13 +995,13 @@ main {
 }
 
 .project-meta :is(.project-category, time) {
-  color: var(--light-gray-70);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
 .project-meta .dot {
-  background: var(--light-gray-70);
+  background: var(--light-gray);
   width: 4px;
   height: 4px;
   border-radius: 4px;
@@ -1022,24 +1023,20 @@ main {
 }
 
 
-
-
-
-
-
 /*-----------------------------------*\
-  #BLOG
+  #TEACHING
 \*-----------------------------------*/
 
-.blog-posts { margin-bottom: 10px; }
+.teaching-posts { margin-bottom: 10px; }
 
-.blog-posts-list {
+.teaching-posts-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.blog-post-item > a {
+.teaching-post-item > a {
+  display: block;
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1048,34 +1045,34 @@ main {
   z-index: 1;
 }
 
-.blog-post-item > a::before {
+.teaching-post-item > a::before {
   content: "";
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--eerie-black-1);
+  background: var(--eerie-black-2);
   z-index: -1;
 }
 
-.blog-banner-box {
+.teaching-banner-box {
   width: 100%;
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.blog-banner-box img {
+.teaching-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.teaching-post-item > a:hover .teaching-banner-box img { transform: scale(1.1); }
 
-.blog-content { padding: 15px; }
+.teaching-content { padding: 15px; }
 
-.blog-meta {
+.teaching-meta {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1083,28 +1080,21 @@ main {
   margin-bottom: 10px;
 }
 
-.blog-meta :is(.blog-category, time) {
-  color: var(--light-gray-70);
+.teaching-meta :is(time) {
+  color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
-.blog-meta .dot {
-  background: var(--light-gray-70);
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
-}
-
-.blog-item-title {
+.teaching-item-title {
   margin-bottom: 10px;
   line-height: 1.3;
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.teaching-post-item > a:hover .teaching-item-title { color: var(--orange-yellow-crayola); }
 
-.blog-text {
+.teaching-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1245,7 +1235,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .teaching-banner-box { height: auto; }
 
 }
 
@@ -1503,11 +1493,11 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #PORTFOLIO, BLOG
    */
 
-  .project-img, .blog-banner-box { border-radius: 16px; }
+  .project-img, .teaching-banner-box { border-radius: 16px; }
 
-  .blog-posts-list { gap: 30px; }
+  .teaching-posts-list { gap: 20px; }
 
-  .blog-content { padding: 25px; }
+  .project-content, .teaching-content { padding: 20px; }
 
 
 
@@ -1621,7 +1611,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* portfolio and blog grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .teaching-posts-list { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1749,7 +1739,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * BLOG
    */
 
-  .blog-banner-box { height: 230px; }
+  .teaching-banner-box { height: 230px; }
 
 }
 
