@@ -39,10 +39,8 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-  console.log(filterItems)
 
   for (let i = 0; i < filterItems.length; i++) {
-    console.log(filterItems[i].dataset)
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
