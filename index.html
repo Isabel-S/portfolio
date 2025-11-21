@@ -7,636 +7,180 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isabel Sieh - Portfolio</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:wght@400;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img class="avatar-img" src="./assets/images/my-avatar.png" alt="Isabel Sieh" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Isabel Sieh</h1>
-
-          <p class="title">B.S./M.S. CS @ Stanford</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Socials</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:isabelrs@stanford.edu" class="contact-link">isabelrs@stanford.edu</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/isabelsieh/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/Isabel-S" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="assets/images/Isabel_Sieh_Current_Resume.pdf" class="social-link">
-              <ion-icon name="newspaper-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Hi!</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Teaching</button>
-          </li>
-
-          
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="hi!  active" data-page="hi!">
-
-        <header>
-          <h2 class="h2 article-title">Hi!</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a student at Stanford University studying Computer Science and Digital Humanities (minor). I'm pursuing both B.S. and M.S. in Computer Science through Stanford's coterminal degree program. I'm originally from Manila, Philippines and New York.
-            My studies and projects focuses on AI. 
-          </p>
-
-          <p>
-            I'm interested in tech that improves humanity, particularly for underservered communitities I care deeply about, and our earth, including AI for social good, computational journalism, edtech, and innovative software engineering roles that tackle real-world problems. 
-          </p>
-
-          <p>
-            For the most updated highlights of my work checkout my resume or LinkedIn.
-          </p>
-
-          <p>
-            Click the tabs to learn about selected projects (research, course projects, dev work), and teaching/outreach work I'm invovled in.
-          </p>
-
-          <p>
-            <a href="https://github.com/Isabel-S/portfolio">[Portfolio adapted from @codewithsadee]</a>
-          </p>
-          <p>
-            <a href="https://isabel-s.github.io/hi-isabel/">[Curious about my personal webpage past? checkout my old website with my own 3d smiski]</a>
-          </p>
-        </section>
-  
-      </article>
-
-
-      <!--
-        - #PROJECTS
-      -->
-
-      <article class="projects" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Research</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Coursework</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Research</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Coursework</button>
-              </li>
-
-            </ul>
-
+  <div class="container">
+    <!-- Main Content -->
+    <main class="main-content">
+      <section id="about" class="content-section">
+        <h1>Isabel Sieh</h1>
+        <p class="location">Stanford University</p>
+        <div class="decorative-line">°❀⋆.ೃ࿔*:･⋆｡𖦹°⭒˚｡⋆✩₊˚.⋆☾⋆⁺₊✧*ੈ✩‧₊˚°❀⋆.ೃ࿔*:･⋆｡𖦹°⭒˚｡⋆✩₊˚.⋆☾⋆⁺₊✧*ੈ✩‧₊˚°❀⋆.ೃ࿔*:･⋆｡𖦹°⭒˚｡⋆✩₊˚.⋆☾⋆⁺₊✧*ੈ✩‧₊˚</div>
+        <p>
+          I am dedicated to building technology for social impact and studying its real-world effects so we can build systems that genuinely help people.
+        </p>
+        <p>
+          Currently I am:
+          <br>
+           - Finishing my Masters' in AI at Stanford having previously completed my undergrad in Computer Science also at Stanford
+           <br>
+           - Evaluating user outcomes from LLM conversations and building guardrails to steer LLMs to prioritize user wellbeing with PhD Candidate <a href="https://myracheng.github.io/" target="_blank" rel="noreferrer">Myra Cheng</a> at the NLP Group
+           <br>
+           - Teaching <a href="https://cs161-stanford.github.io/" target="_blank" rel="noreferrer">CS 161: Design and Analysis of Algorithms</a> as a TA
+        </p>
+        <p>
+          I'm previously interned at Waymo working on agents and The New York Times (with <a href="https://www.nytimes.com/by/isabel-sieh" target="_blank" rel="noreferrer">bylines</a> !) as a engineer on Interactive News and AI Initiatives. I've helped publish research in robotics and edtech, and led independent research project on <a href="https://philippine-presstitutes.github.io/">online violence faced by Filipina journalists</a>. I am also a <a href="https://campkaleidoscope.org/" target="_blank" rel="noreferrer">camp</a> counselor for kids with a parent cancer experience (and raised <a href="https://www.instagram.com/p/DIrYn10PYC-/?img_index=1" target="_blank" rel="noreferrer">60k</a> for it). When I was young, I started a nationwide <a href="https://coding.ph" target="_blank" rel="noreferrer">coding school</a> and <a href="https://www.youtube.com/watch?v=Aca7CaMGAII" target="_blank" rel="noreferrer">girls coding organization</a>, both which run independently today.
+        </p>
+        <p>
+          I'm originally from Manila, Philippines and New York.
+        </p>
+        <p>
+          You can email me at isabelrs@stanford.edu. I also have a <a href="https://www.linkedin.com/in/isabelsieh/"  target="_blank" rel="noreferrer">LinkedIn</a>, <a href="https://github.com/Isabel-S"   target="_blank" rel="noreferrer">GitHub</a>, and <a href="./assets/images/Isabel_Sieh_Current_Resume_2026.pdf" target="_blank" rel="noreferrer">resume</a>.
+        </p>
+      </section>
+
+      <section id="portfolio" class="content-section">
+        <h2>Portfolio</h2>
+        <article class="project-item">
+          <div class="project-item-content">
+            <h3>Waymo - Summer 2025</h3>
+            <p>I learned robust engineering fundamentals. I worked at Waymo on a web visualization team used to analyze ride simulations and planned paths. I built a backend infrastructure and front-end display that lets users explore version history and have a Gemini agent run actions for them. </p>
           </div>
+          <!-- Optional: Add an image by uncommenting and updating the src -->
+          <!-- <img src="./assets/images/your-image.jpg" alt="NYT Project" class="project-image"> -->
+        </article>
+
+        <article class="project-item">
+          <div class="project-item-content">
+            <h3>Generating High Quality Math Visual Aids via Agentic Workflows - 2025 Course Research</h3>
+            <p>This is a project for CS329A: Self Improving AI Agents. Generating, evaluating, and providing feedback (and self improving) through AI to dynamically produce Math diagrams fundamental to K-12 education.
+            </p>
+          </div>
+          <!-- Optional: Add an image by uncommenting and updating the src -->
+          <!-- <img src="./assets/images/your-image.jpg" alt="NYT Project" class="project-image"> -->
+        </article>
+
+        <article class="project-item">
+          <div class="project-item-content">
+            <h3>The New York Times @ Interactive News &amp; AI Initiatives - Summer 2024</h3>
+            <p>I worked on multiple projects including the US Election, EU and UK live election results, Olympics results reporting, an AI visual search tool, and data-analysis to help reporters. The image shows a timeline of what I worked on. I cannot share the timeline or more details due to confidentiality, but happy to chat more.
+            </p>
+            <p><a href="https://www.nytimes.com/by/isabel-sieh" target="_blank" rel="noreferrer">Read my bylines →</a></p>
+          </div>
+          <img src="./assets/images/nyt-timeline.jpg" alt="NYT Internship Timeline" class="project-image">
+          <!-- Optional: Add an image by uncommenting and updating the src -->
+          <!-- <img src="./assets/images/your-image.jpg" alt="NYT Project" class="project-image"> -->
+        </article>
+
+                <article class="project-item">
+          <div class="project-item-content">
+            <h3>Evaluating Real-World Robot Manipulation Policies in Simulation - 2024 Research</h3>
+            <p>
+              This is published work I contributed to as an undergrad researcher at Chelsea Finn's IRIS lab where I learn about AI and work on a project on creating a simulation tool for researchers to use to make robot evaluation more accessible. The research has been published to a RSS 2024 Workshop and CoRL 2024.
+            </p>
+            <p><a href="https://simpler-env.github.io/" target="_blank" rel="noreferrer">Read paper →</a></p>
+          </div>
+          <img src="./assets/images/robot-eval.jpg" alt="SIMPLER" class="project-image">
+        </article>
+
+        <article class="project-item">
+          <div class="project-item-content">
+            <h3>NatuRel: Advancing Relational Understanding in Vision-Language Models with Natural Language Variations - 2024 Course Research</h3>
+            <p>This is a final research project I did for CS224N: Natural Language Processing with Deep Learning. We created 100k image-text dataset and fine-tuned VLMs, achieving state-of-the-art visio-linguistic compositional reasoning. Our final poster is linked, email me if you want to access our final written report.
+              ControlNet-based fine-tuning pipeline that keeps generated faces faithful to source images while reducing downstream bias. Co-led research, model design, and eval suite.
+            </p>
+            <p><a href="./assets/images/CS224N-poster.pdf" target="_blank" rel="noreferrer">View poster →</a></p>
+          </div>
+          <img src="./assets/images/CS224N.jpg" alt="NatuRel" class="project-image">
+
+        </article>
+
+
+        <article class="project-item">
+          <div class="project-item-content">
+            <h3>#Presstitute: Online Violence Faced By Filipina Journalists and Fighting Back with Data - Summer 2023</h3>
+            <p>
+              I developed an interactive article on with scrollytelling and data visualizations. This was part of an independent summer research project funded by Stanford’s Clayman Institute for Gender Research as a Susan Heck scholar, where I conducted NLP, social media, social science research, and interviews culminating in a research presentation and interactive article.            </p>
+            <p><a href="https://https://philippine-presstitutes.github.io/" target="_blank" rel="noreferrer">Read article →</a></p>
+          </div>
+          <img src="./assets/images/project-presstitute.gif" alt="#Presstitute Interactive" class="project-image">
+        </article>
+
+
+        <article class="project-item">
+          <div class="project-item-content">
+            <h3>AI Literacy Project - 2022-2023</h3>
+            <p>
+              I took on multiple roles in the ongoing AI literacy project, currently called <a href="https://craft.stanford.edu/" target="_blank" rel="noreferrer">Classroom-Ready Resources About AI For Teaching (CRAFT)</a>. I created the entire curriculum for the AI & Math Unit including teaching resources. I developed 2 interactive tools (Datamax and Analyze), and the Resources tab of explorable AI literacy resources using technologies including Typescript, GoogleAPI, and Observable. I also facilitated classroom sessions, and conducted multiple co-design and user testing interviews on our curriculum and CRAFT website. This project was presented at the CHI AI literacy workshop and appeared in 4 papers, one of which I am cited as author.            <p><a href="https://https://philippine-presstitutes.github.io/" target="_blank" rel="noreferrer">Read article →</a></p>
+          </div>
+          <img src="./assets/images/project-craft.gif" alt="AI Literacy" class="project-image">
+        </article>
+      </section>
+
+      <section id="experience" class="content-section">
+        <h2>Mentorship</h2>
+        <article class="experience-item">
+          <div class="experience-item-content">
+            <h3>Camp Kaleidoscope - 2023-2025</h3>
+            <p>
+              I’ve been a counselor for <a href="https://campkaleidoscope.org/" target="_blank" rel="noreferrer">Camp Kaleidoscope</a>,  a week-long summer camp and year-long community for kids with a parent of cancer. In 2025, I organized a gala that raised <a href="https://www.instagram.com/p/DIrYn10PYC-/?img_index=1" target="_blank" rel="noreferrer">$60k</a> towards making camp free for all families. It’s a cause that holds a very special place in my heart. 
+            </p>
+          </div>
+          <img src="./assets/images/teaching-kesem.jpg" alt="Camp Kaleidoscope" class="project-image">
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-item-content">
+            <h3>Section Leading - 2021-2023</h3>
+            <p>
+              As an undergrad, I was a <a href="https://cs198.stanford.edu/web" target="_blank" rel="noreferrer">section leader</a> for Stanford's introductory CS106A and intermediate CS106B computer science courses. I hosted weekly problem sessions to review content in a small group setting, ran office hours where I debug students homework and review concepts, graded homework and gave interactive feedback, and proctored and graded exams.
+            </p>
+          </div>
+          <!-- Optional: Add an image by uncommenting and updating the src -->
+          <!-- <img src="./assets/images/project-craft.gif" alt="CRAFT" class="project-image"> -->
+          <img src="./assets/images/teaching-sl.jpg" alt="Section Leading" class="project-image">
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-item-content">
+            <h3>The Coding School - 2017-2021</h3>
+            <p>
+              In high school, I started a weekly and summer camp <a href="https://coding.ph" target="_blank" rel="noreferrer">coding school</a>; creating curriculum, managing finances, teaching classes, and hiring employees. Today, it is a profitable global (10+ countries) coding and design after-school and summer camp provider connecting 3000+ students with 100+ trained teachers from top universities in the Philippines through 40+ courses to date.</p>
+          </div>
+          <!-- Optional: Add an image by uncommenting and updating the src -->
+          <img src="./assets/images/teaching-tcs.jpg" alt="The Coding School" class="project-image">
+s        </article>
+
+        <article class="experience-item">
+          <div class="experience-item-content">
+            <h3>Girls Will Code - 2017-2021</h3>
+            <p>
+              At age 14, I started <a href="https://www.youtube.com/watch?v=Aca7CaMGAII" target="_blank" rel="noreferrer" >Girls Will Code</a>, a nationwide organization with a mission to encourage girls to take part in STEM through workshops, speaker events, outreaches, and curated resources. Under my leadership, I organized 30 events, taught 2,000+ student from 44 schools, and created 25 learning resources amassing 3000+ views. I received the Philippine Woman Leader Award, Gender Equality Youth Champion, and work was recognized by a former Vice President of the Philippines          </div>
+          <!-- Optional: Add an image by uncommenting and updating the src -->
+          <img src="./assets/images/teaching-gwc.jpg" alt="Girls Will Code" class="project-image">
+        </article>
+      </section>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar">
+      <img src="./assets/images/my-avatar.png" alt="Isabel Sieh" class="profile-photo">
+      <nav class="sidebar-nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#experience" class="nav-link">Mentorship</a>
+      </nav>
+    </aside>
+  </div>
 
-          <ul class="project-list">
-            <li class="project-post-item active" data-filter-item data-category="internship">
-              <a href="https://www.nytimes.com/by/isabel-sieh">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/nyt-timeline.jpg" alt="NYT Timeline" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Internship</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-08-01">Summer 2024</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">New York Times Internship @ Interactive News and AI Initiatives</h3>
-
-                  <p class="project-text">
-                    As software engineering intern at the New York Times' Interactive News team and AI Initatives team, I worked on multiple projects including the US Election, EU and UK live election results, Olympics results reporting, an AI visual search tool, and data-analysis to help reporters. The image shows a timeline of what I worked on, and this card links to my bylines. I cannot share the timeline or more details due to confidentiality, but happy to chat more about my work :)
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="coursework">
-              <a href="./assets/images/CS231N-poster.pdf">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/CS231N.jpg" alt="SaveFace: Controlling Face in Image Diffusion Models" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Coursework</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-08-01">Spring 2024</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">SaveFace: Controlling Face in Image Diffusion Models</h3>
-
-                  <p class="project-text">
-                    This is a custom final research project I did for CS231N: Deep Learning for Computer Vision. We built a ControlNet-based text-image diffusion model using image pre-processing to preserve facial features and mitigate social biases. Our final written report received a perfect scotre! Our final poster is linked, email me if you want to access our final written report.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="coursework">
-              <a href="./assets/images/CS224N-poster.pdf">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/CS224N.jpg" alt="NatuRel: Advancing Relational Understanding in
-                  Vision-Language Models with Natural Language
-                  Variations" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Coursework</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-08-01">Winter 2024</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">NatuRel: Advancing Relational Understanding in Vision-Language Models with Natural Language Variations</h3>
-
-                  <p class="project-text">
-                    This is a custom final research project I did for CS224N: Natural Language Processing with Deep Learning. We created 100k image-text dataset and fine-tuned VLMs, achieving state-of-the-art visio-linguistic compositional reasoning. Our final poster is linked, email me if you want to access our final written report.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="research">
-              <a href="https://anon-simpler.github.io/">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/robot-eval.jpg" alt="Evaluating Real-World Robot Manipulation Policies in Simulation" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Research</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-08-01">Fall 2023 - Winter 2024</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">Evaluating Real-World Robot Manipulation Policies in Simulation</h3>
-
-                  <p class="project-text">
-                    This is published work I contributed to as an undergrad researcher at Chelsea Finn's IRIS lab where I learn about AI and work on a project on creating a simulation tool for researchers to use to make robot evaluation more accessible. The research linked has been published to a RSS 2024 Workshop.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="research">
-              <a href="https://philippine-presstitutes.github.io/">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/project-presstitute.gif" alt="#Presstitute: Online Violence Faced By Filipina Journalists and Fighting Back with Data" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Research</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-08-01">Summer 2023</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">#Presstitute: Online Violence Faced By Filipina Journalists and Fighting Back with Data</h3>
-
-                  <p class="project-text">
-                    I developed an interactive article on with scrollytelling and data visualizations. This was part of an independent summer research project funded by Stanford’s Clayman Institute for Gender Research as a Susan Heck scholar, where I conducted NLP, social media, social science research, and interviews culminating in a research presentation and interactive article (full desktop view only). 
-
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="coursework">
-              <a href="https://campus-crime-watch.github.io/">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/project-campuscrimewatch.gif" alt="Campus Crimewatch" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Coursework</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-06-01">Spring 2023</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">Campus Crimewatch</h3>
-
-                  <p class="project-text">
-                    For the Building News Applications Spring 2023 course, we created a website aiming to create a centralized, accessible picture of crime and safety on college campuses. We also created a pipeline and extensive documentation for college campuses to replicate this. I collected, wrangled, and geocoded crime data using ArcGIS API that was later visualized crimes into an interactive map. I also produced crime stats from data analysis using D3.js, and developed an automated news ticker using an RSS feed and GitHub actions.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="research">
-              <a href="https://brown.columbia.edu/announcing-2023-magic-grants/">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/project-datafromdocs.jpg" alt="Data From Docs" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Research</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-05-25">Spring 2023</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">Data From Docs - The Brown Institute Magic Grant Awardee</h3>
-
-                  <p class="project-text">
-                    In 2023 late spring and early fall, I helped in the grant proposal and start of Data From Docs, a 2023-2024 Magic Grant Recipient from The Brown Institute for Media Innovation (partnership between Columbia Journalism School and Stanford’s School of Engineering). The project aims to create an accessible suite of tools (OCR, entity recognition, data extraction using LLMs etc.) to help journalists, local especially, discover stories in large, unstructured sets of documents. The project tests and builds upon existing tools (such as Document Cloud and other BigLocal tools), with police misconduct data and local governing bodies' minutes collected by AgendaWatch as its evaluation dataset.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="research">
-              <a href="https://craft.stanford.edu/">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/project-craft.gif" alt="AI Literacy Project" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Research</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-05-01">Winter 2022 - Spring 2023</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">AI Literacy Project</h3>
-
-                  <p class="project-text">
-                    I took on multiple roles in the ongoing AI literacy project, currently called Classroom-Ready Resources About AI For Teaching (CRAFT). I created the entire curriculum for the AI & Math Unit including teaching resources. I developed 2 interactive tools (Datamax and Analyze), and the Resources tab of explorable AI literacy resources using technologies including Typescript, GoogleAPI, and Observable. I also facilitated classroom sessions, and conducted multiple co-design and user testing interviews on our curriculum and CRAFT website. This project was presented at the CHI AI literacy workshop and appeared in 4 papers, one of which I am cited as author. 
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="project-post-item active" data-filter-item data-category="coursework">
-              <a href="https://github.com/Isabel-S/cs198-sl-helper">
-
-                <figure class="project-banner-box">
-                  <img src="./assets/images/project-slhelper.jpg" alt="Section Leader Helper" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-
-                  <div class="project-meta">
-                    <p class="project-category">Coursework</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-03-01">Winter 2022</time>
-                  </div>
-
-                  <h3 class="h3 project-item-title">Section Leader Helper</h3>
-
-                  <p class="project-text">
-                    For CS193x: Web Programming Fundamentals, my final project was a multi-purpose tool to help with Section Leaders (SLs) as I was a section leader at the time. This includes (1) a teaching tool to create cards of their practice whiteboard, links to handout/solutions and (2) a grading tool to store comments reused for different submissions that can be viewed per homework assignment. It is made entirely from scratch, with the frontend written in HTML and CSS and Javascript, and the backend written in Javascript, specifically Node and Express, and uses a MongoDB database.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="teaching" data-page="teaching">
-
-        <header>
-          <h2 class="h2 article-title">Teaching & Outreach</h2>
-        </header>
-
-        <section class="teaching-posts">
-
-          <ul class="teaching-posts-list">
-
-            <li class="teaching-post-item">
-              <a href="https://campkaleidoscope.org/">
-
-                <figure class="teaching-banner-box">
-                  <img src="./assets/images/teaching-kesem.jpg" alt="Camp Kaleidoscope" loading="lazy">
-                </figure>
-
-                <div class="teaching-content">
-
-                  <div class="teaching-meta">
-                    <time datetime="2023-01-01">2023</time>
-                  </div>
-
-                  <h3 class="h3 teaching-item-title">Camp Kaleidoscope</h3>
-
-                  <p class="teaching-text">
-                    Since Winter 2023, I’ve been a counselor for Camp Kaleidoscope, a week-long summer camp and year-long community for kids with a parent of cancer. I am currently the Special Events head, raising 50k towards making camp free for all families. It’s a cause that holds a very special place in my heart. The goal is for the kids to experience Kesem magic; joy they don’t often get to experience due to the rare burdens they bear at a young age. 
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="teaching-post-item">
-              <a href="https://cs198.stanford.edu/cs198/">
-
-                <figure class="teaching-banner-box">
-                  <img src="./assets/images/teaching-sl.jpg" alt="Section Leading" loading="lazy">
-                </figure>
-
-                <div class="teaching-content">
-
-                  <div class="teaching-meta">
-                    <time datetime="2023-01-01">2021 - 2023</time>
-                  </div>
-
-                  <h3 class="h3 teaching-item-title">Section Leading</h3>
-
-                  <p class="teaching-text">
-                    I am occasionally a section leader (essentially a TA) for Stanford's introductory CS106A and intermediate CS106B computer science courses. I hosted weekly problem sessions to review content in a small group setting, ran office hours where I debug students homework and review concepts, graded homework and gave interactive feedback, and proctored and graded exams. 
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="teaching-post-item">
-              <a href="#">
-
-                <figure class="teaching-banner-box">
-                  <img src="./assets/images/teaching-tcs.jpg" alt="The Coding School" loading="lazy">
-                </figure>
-
-                <div class="teaching-content">
-
-                  <div class="teaching-meta">
-                    <time datetime="2021-01-01">2017 - 2021</time>
-                  </div>
-
-                  <h3 class="h3 teaching-item-title">The Coding School</h3>
-
-                  <p class="teaching-text">
-                    In high school, I started a weekly and summer camp coding school; creating curriculum, managing finances, teaching classes, and hiring employees. Today, it is a profitable global (10+ countries) coding and design after-school and summer camp provider connecting 3000+ students with 100+ trained teachers from top universities in the Philippines through 40+ courses to date.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="teaching-post-item">
-              <a href="https://www.girlswillcode.com/">
-
-                <figure class="teaching-banner-box">
-                  <img src="./assets/images/teaching-gwc.jpg" alt="Girls Will Code" loading="lazy">
-                </figure>
-
-                <div class="teaching-content">
-
-                  <div class="teaching-meta">
-                    <time datetime="2021-01-01">2015 - 2021</time>
-                  </div>
-
-                  <h3 class="h3 teaching-item-title">Girls Will Code</h3>
-
-                  <p class="teaching-text">
-                    At age 14, I started Girls Will Code a nationwide organization with a mission to encourage girls to take part in STEM through workshops, speaker events, outreaches, and curated resources. Under my leadership, I organized 30 events, taught 2,000+ student from 44 schools, and created 25 learning resources amassing 3000+ views. I received the Philippine Woman Leader Award, Gender Equality Youth Champion, and work was recognized by a former Vice President of the Philippines 
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
